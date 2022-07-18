@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Test Suite">
+	<listeners>
+		<listener class-name="pinoyParent.reusable.ListenersImplementation" />
+	</listeners>
+	
+  <test thread-count="3" name="All Test Cases">
+    <classes>
+      <class name="pinoyParent.testCases.SignUp_TestCase"/>
+      <class name="pinoyParent.testCases.Login_TestCase"/>
+      <class name="pinoyParent.testCases.Video_TestCase"/>
+      <class name="pinoyParent.testCases.ShortCourse_TestCase"/>
+      <class name="pinoyParent.testCases.Articles_TestCase"/>
+      <class name="pinoyParent.testCases.Community_TestCase"/>
+      <class name="pinoyParent.testCases.Menu_TestCase"/>
+      <class name="pinoyParent.testCases.Profile_TestCase"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

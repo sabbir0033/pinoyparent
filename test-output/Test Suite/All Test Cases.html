@@ -1,0 +1,460 @@
+<html>
+<head>
+<title>TestNG:  All Test Cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>All Test Cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>28/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 26 01:03:40 BDT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>1933 seconds (1933770 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='pinoyParent.testCases.Community_TestCase.communityNewPostComment()'><b>communityNewPostComment</b><br>Test class: pinoyParent.testCases.Community_TestCase</td>
+<td><div><pre>java.lang.AssertionError: Commment number not updated!. --  expected [true] but found [false]
+	at pinoyParent.functionalities.Community.commentOnPost(Community.java:266)
+	at pinoyParent.testCases.Community_TestCase.communityNewPostComment(Community_TestCase.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1663844181", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1663844181'><pre>java.lang.AssertionError: Commment number not updated!. --  expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at pinoyParent.functionalities.Community.commentOnPost(Community.java:266)
+	at pinoyParent.testCases.Community_TestCase.communityNewPostComment(Community_TestCase.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>52</td>
+<td>pinoyParent.testCases.Community_TestCase@2e005c4b</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Profile_TestCase.emptyChildInfo()'><b>emptyChildInfo</b><br>Test class: pinoyParent.testCases.Profile_TestCase</td>
+<td><div><pre>java.lang.AssertionError: Error occured. --  expected [true] but found [false]
+	at pinoyParent.functionalities.Profile.profileInfoUpdateWithEmptyChildInfo(Profile.java:336)
+	at pinoyParent.testCases.Profile_TestCase.emptyChildInfo(Profile_TestCase.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1828183630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1828183630'><pre>java.lang.AssertionError: Error occured. --  expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at pinoyParent.functionalities.Profile.profileInfoUpdateWithEmptyChildInfo(Profile.java:336)
+	at pinoyParent.testCases.Profile_TestCase.emptyChildInfo(Profile_TestCase.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>55</td>
+<td>pinoyParent.testCases.Profile_TestCase@5ffead27</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Profile_TestCase.profileInfoEdit()'><b>profileInfoEdit</b><br>Test class: pinoyParent.testCases.Profile_TestCase</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.AccessibilityId: Name: C1
+Gender: Male (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;SCI-BD-L17-3291&apos;, ip: &apos;192.168.31.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: C:\Users\sabinul.sabbir\ecl..., appium:appPackage: com.savethechildren.pinoy_p..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\sabinul.sabbir\ecl..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Sabbir, platformName: android, platformVersion: 12, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2065, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: android}
+Session ID: 989431ea-f4bf-45d0-8dd9-9989c97e8e0f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pinoyParent.functionalities.Profile.profileInfoEdit(Profile.java:181)
+	at pinoyParent.testCases.Profile_TestCase.profileInfoEdit(Profile_TestCase.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace328256588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace328256588'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.AccessibilityId: Name: C1
+Gender: Male (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;SCI-BD-L17-3291&apos;, ip: &apos;192.168.31.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: C:\Users\sabinul.sabbir\ecl..., appium:appPackage: com.savethechildren.pinoy_p..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\sabinul.sabbir\ecl..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Sabbir, platformName: android, platformVersion: 12, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2065, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: android}
+Session ID: 989431ea-f4bf-45d0-8dd9-9989c97e8e0f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pinoyParent.functionalities.Profile.profileInfoEdit(Profile.java:181)
+	at pinoyParent.testCases.Profile_TestCase.profileInfoEdit(Profile_TestCase.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>105</td>
+<td>pinoyParent.testCases.Profile_TestCase@5ffead27</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Articles_TestCase.downloadedArticles()'><b>downloadedArticles</b><br>Test class: pinoyParent.testCases.Articles_TestCase</td>
+<td><div><pre>java.lang.AssertionError: No Content found ! expected [true] but found [false]
+	at pinoyParent.functionalities.Articles.downloadedArticles(Articles.java:230)
+	at pinoyParent.testCases.Articles_TestCase.downloadedArticles(Articles_TestCase.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace784882213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace784882213'><pre>java.lang.AssertionError: No Content found ! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at pinoyParent.functionalities.Articles.downloadedArticles(Articles.java:230)
+	at pinoyParent.testCases.Articles_TestCase.downloadedArticles(Articles_TestCase.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>34</td>
+<td>pinoyParent.testCases.Articles_TestCase@74e52303</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Articles_TestCase.savedArticles()'><b>savedArticles</b><br>Test class: pinoyParent.testCases.Articles_TestCase</td>
+<td><div><pre>java.lang.AssertionError: No Content found ! expected [true] but found [false]
+	at pinoyParent.functionalities.Articles.savedArticles(Articles.java:199)
+	at pinoyParent.testCases.Articles_TestCase.savedArticles(Articles_TestCase.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace929066990", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace929066990'><pre>java.lang.AssertionError: No Content found ! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at pinoyParent.functionalities.Articles.savedArticles(Articles.java:199)
+	at pinoyParent.testCases.Articles_TestCase.savedArticles(Articles_TestCase.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>36</td>
+<td>pinoyParent.testCases.Articles_TestCase@74e52303</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='pinoyParent.testCases.Articles_TestCase.saveArticles()'><b>saveArticles</b><br>Test class: pinoyParent.testCases.Articles_TestCase</td>
+<td></td>
+<td>46</td>
+<td>pinoyParent.testCases.Articles_TestCase@74e52303</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Profile_TestCase.profileInfo()'><b>profileInfo</b><br>Test class: pinoyParent.testCases.Profile_TestCase</td>
+<td></td>
+<td>73</td>
+<td>pinoyParent.testCases.Profile_TestCase@5ffead27</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Menu_TestCase.videoContentMenu()'><b>videoContentMenu</b><br>Test class: pinoyParent.testCases.Menu_TestCase</td>
+<td></td>
+<td>37</td>
+<td>pinoyParent.testCases.Menu_TestCase@4567f35d</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Menu_TestCase.aboutUsMenu()'><b>aboutUsMenu</b><br>Test class: pinoyParent.testCases.Menu_TestCase</td>
+<td></td>
+<td>37</td>
+<td>pinoyParent.testCases.Menu_TestCase@4567f35d</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Community_TestCase.communityNewPostReport()'><b>communityNewPostReport</b><br>Test class: pinoyParent.testCases.Community_TestCase</td>
+<td></td>
+<td>55</td>
+<td>pinoyParent.testCases.Community_TestCase@2e005c4b</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Community_TestCase.communityNewPostShare()'><b>communityNewPostShare</b><br>Test class: pinoyParent.testCases.Community_TestCase</td>
+<td></td>
+<td>44</td>
+<td>pinoyParent.testCases.Community_TestCase@2e005c4b</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Community_TestCase.communityNewPostCreation()'><b>communityNewPostCreation</b><br>Test class: pinoyParent.testCases.Community_TestCase</td>
+<td></td>
+<td>66</td>
+<td>pinoyParent.testCases.Community_TestCase@2e005c4b</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Menu_TestCase.privacyPolicyMenu()'><b>privacyPolicyMenu</b><br>Test class: pinoyParent.testCases.Menu_TestCase</td>
+<td></td>
+<td>36</td>
+<td>pinoyParent.testCases.Menu_TestCase@4567f35d</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Articles_TestCase.articles()'><b>articles</b><br>Test class: pinoyParent.testCases.Articles_TestCase</td>
+<td></td>
+<td>30</td>
+<td>pinoyParent.testCases.Articles_TestCase@74e52303</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Menu_TestCase.subscriptionMenu()'><b>subscriptionMenu</b><br>Test class: pinoyParent.testCases.Menu_TestCase</td>
+<td></td>
+<td>37</td>
+<td>pinoyParent.testCases.Menu_TestCase@4567f35d</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Articles_TestCase.reactOnarticles()'><b>reactOnarticles</b><br>Test class: pinoyParent.testCases.Articles_TestCase</td>
+<td></td>
+<td>39</td>
+<td>pinoyParent.testCases.Articles_TestCase@74e52303</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Articles_TestCase.extinsiveArticles()'><b>extinsiveArticles</b><br>Test class: pinoyParent.testCases.Articles_TestCase</td>
+<td></td>
+<td>40</td>
+<td>pinoyParent.testCases.Articles_TestCase@74e52303</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Articles_TestCase.shareArticles()'><b>shareArticles</b><br>Test class: pinoyParent.testCases.Articles_TestCase</td>
+<td></td>
+<td>51</td>
+<td>pinoyParent.testCases.Articles_TestCase@74e52303</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Menu_TestCase.articleBlogsMenu()'><b>articleBlogsMenu</b><br>Test class: pinoyParent.testCases.Menu_TestCase</td>
+<td></td>
+<td>34</td>
+<td>pinoyParent.testCases.Menu_TestCase@4567f35d</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Community_TestCase.communityJoined()'><b>communityJoined</b><br>Test class: pinoyParent.testCases.Community_TestCase</td>
+<td></td>
+<td>44</td>
+<td>pinoyParent.testCases.Community_TestCase@2e005c4b</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Menu_TestCase.termsConditionMenu()'><b>termsConditionMenu</b><br>Test class: pinoyParent.testCases.Menu_TestCase</td>
+<td></td>
+<td>38</td>
+<td>pinoyParent.testCases.Menu_TestCase@4567f35d</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Menu_TestCase.communityMenu()'><b>communityMenu</b><br>Test class: pinoyParent.testCases.Menu_TestCase</td>
+<td></td>
+<td>35</td>
+<td>pinoyParent.testCases.Menu_TestCase@4567f35d</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Menu_TestCase.storeMenu()'><b>storeMenu</b><br>Test class: pinoyParent.testCases.Menu_TestCase</td>
+<td></td>
+<td>34</td>
+<td>pinoyParent.testCases.Menu_TestCase@4567f35d</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Menu_TestCase.settingsMenu()'><b>settingsMenu</b><br>Test class: pinoyParent.testCases.Menu_TestCase</td>
+<td></td>
+<td>43</td>
+<td>pinoyParent.testCases.Menu_TestCase@4567f35d</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Menu_TestCase.helpLineMenu()'><b>helpLineMenu</b><br>Test class: pinoyParent.testCases.Menu_TestCase</td>
+<td></td>
+<td>40</td>
+<td>pinoyParent.testCases.Menu_TestCase@4567f35d</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Community_TestCase.communityList()'><b>communityList</b><br>Test class: pinoyParent.testCases.Community_TestCase</td>
+<td></td>
+<td>45</td>
+<td>pinoyParent.testCases.Community_TestCase@2e005c4b</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Community_TestCase.communityNewPostLikeUnlike()'><b>communityNewPostLikeUnlike</b><br>Test class: pinoyParent.testCases.Community_TestCase</td>
+<td></td>
+<td>39</td>
+<td>pinoyParent.testCases.Community_TestCase@2e005c4b</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Menu_TestCase.shortCourseMenu()'><b>shortCourseMenu</b><br>Test class: pinoyParent.testCases.Menu_TestCase</td>
+<td></td>
+<td>34</td>
+<td>pinoyParent.testCases.Menu_TestCase@4567f35d</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Articles_TestCase.downloadArticles()'><b>downloadArticles</b><br>Test class: pinoyParent.testCases.Articles_TestCase</td>
+<td></td>
+<td>48</td>
+<td>pinoyParent.testCases.Articles_TestCase@74e52303</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Community_TestCase.Newcommunity()'><b>Newcommunity</b><br>Test class: pinoyParent.testCases.Community_TestCase</td>
+<td></td>
+<td>57</td>
+<td>pinoyParent.testCases.Community_TestCase@2e005c4b</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Menu_TestCase.logoutMenu()'><b>logoutMenu</b><br>Test class: pinoyParent.testCases.Menu_TestCase</td>
+<td></td>
+<td>39</td>
+<td>pinoyParent.testCases.Menu_TestCase@4567f35d</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Menu_TestCase.rewardMenu()'><b>rewardMenu</b><br>Test class: pinoyParent.testCases.Menu_TestCase</td>
+<td></td>
+<td>41</td>
+<td>pinoyParent.testCases.Menu_TestCase@4567f35d</td></tr>
+<tr>
+<td title='pinoyParent.testCases.Profile_TestCase.profileView()'><b>profileView</b><br>Test class: pinoyParent.testCases.Profile_TestCase</td>
+<td></td>
+<td>34</td>
+<td>pinoyParent.testCases.Profile_TestCase@5ffead27</td></tr>
+</table><p>
+</body>
+</html>
